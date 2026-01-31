@@ -1,13 +1,9 @@
-
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-fmo5zy8rir42=!9ry%7y+@#_de1ras5o8&oc@e53*4j#(&s9t2'
 
-DEBUG = True
-
-ALLOWED_HOSTS = []
 
 
 INSTALLED_APPS = [
@@ -48,29 +44,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'main.wsgi.application'
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 
 
 
-AUTH_PASSWORD_VALIDATORS = [
-    {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
-    },
-]
+AUTH_PASSWORD_VALIDATORS = []
 
 
 LANGUAGE_CODE = 'en-us'
