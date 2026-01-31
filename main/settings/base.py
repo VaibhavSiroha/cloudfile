@@ -4,7 +4,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-fmo5zy8rir42=!9ry%7y+@#_de1ras5o8&oc@e53*4j#(&s9t2'
 
-
+#exceptin logs middleware
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -13,6 +13,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -45,8 +46,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'main.wsgi.application'
 
 
-
-
 AUTH_PASSWORD_VALIDATORS = []
 
 
@@ -57,6 +56,3 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
-
-
-STATIC_URL = 'static/'
