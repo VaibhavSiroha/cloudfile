@@ -6,7 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 load_dotenv(BASE_DIR / 'local.env')
 
-SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-fmo5zy8rir42=!9ry%7y+@#_de1ras5o8&oc@e53*4j#(&s9t2')
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
