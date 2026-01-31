@@ -5,3 +5,4 @@ psycopg2-binary
 django-storages
 azure-storage-blob
 python-dotenv
+rest_framework
