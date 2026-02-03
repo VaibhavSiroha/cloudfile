@@ -18,6 +18,7 @@ INSTALLED_APPS = [
     'users',
     'rest_framework',
     'storages',
+    'files',
 ]
 
 MIDDLEWARE = [
